@@ -27,6 +27,7 @@ module.exports = class CommandsModule {
 
   async handleMessage(message) {
     const prefix = this.ccpClient.settings.get('prefix');
+    
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const [commandName = commandName.toLowerCase(), ...args] = message.content

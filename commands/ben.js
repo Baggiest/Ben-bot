@@ -17,8 +17,8 @@ module.exports = {
         }
         //get the incoming message and make sure everything is an string
 
-        let mString = message.content.toString()
-
+        let mString = message.content.toString().toLowerCase()
+        
         //temporary solution to making sure that the incoming message is just "ayo ben"
         //and its response to that should always be Yes
 
@@ -29,34 +29,35 @@ module.exports = {
         else {
 
             //random 1 to 10 number generator
-            let randN =  Math.floor(Math.random() * 10) + 1;
-            console.log(randN)
-            switch(randN){
+            let r = Math.floor(Math.random() * 10) + 1;
+            console.log(r)
 
-                case 1||2||3:
+            switch (true) {
+
+                case (r == 1 || r == 2 || r == 3):
                     //yes
                     message.channel.send(`${BenEmotes.yes} yes`)
-                break;
+                    break;
 
-                case 4||5:
+                case (r == 4 || r == 5):
                     //no
                     message.channel.send(`${BenEmotes.no} no`)
-                break;
+                    break;
 
-                case 6||7:
+                case (r == 6 || r == 7):
                     //hohoho
                     message.channel.send(`${BenEmotes.hoho} hohoho`)
-                break;
+                    break;
 
-                case 8||9:
+                case (r == 8 || r == 9):
                     //ugh
                     message.channel.send(`${BenEmotes.ugh} ughhh`)
-                break;
+                    break;
 
-                case 10:
+                case (r == 10):
                     //hangup
                     message.channel.send(`${BenEmotes.hangup} ...`)
-                break
+                    break
 
             }
         }
