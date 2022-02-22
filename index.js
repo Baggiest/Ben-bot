@@ -6,6 +6,9 @@ const CommandsModule = require('./client/modules/commands');
 const config = require('./config.json');
 require("dotenv").config();
 
+
+//to do, trim off the unnecessary guilds and perms
+
 const clientOptions = {
   intents: [
     Discord.Intents.FLAGS.GUILDS,
@@ -38,7 +41,7 @@ async function bootstrap() {
     
   });
 
-  await client.init(config.token);
+  await client.init(process.env.DISCORD_TOKEN);
 }
 
 bootstrap();
