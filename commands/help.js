@@ -3,7 +3,7 @@ module.exports = {
     description: 'send help',
     cooldown: 5,
     async execute(message) {
-        message.channel.send(`for talking use "$$ ben [question]" and "ben" should be lowercase atleast for now`)
+        message.channel.send(`for talking use "yo ben [question]"`)
     },
   };
   
