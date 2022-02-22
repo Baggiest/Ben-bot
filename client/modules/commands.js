@@ -27,10 +27,12 @@ module.exports = class CommandsModule {
 
   async handleMessage(message) {
     const prefix = this.ccpClient.settings.get('prefix');
-    
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-    const [commandName = commandName.toLowerCase(), ...args] = message.content
+    let mContent = message.content.toString().toLowerCase()
+    //bro it work???????? lets gooooooooooooo
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+
+    const [commandName = commandName.toLowerCase(), ...args] = mContent
       .slice(prefix.length)
       .split(/\s+/);
 
