@@ -9,6 +9,7 @@ module.exports = {
 
         //saving the emotes as variables 
         const BenEmotes = {
+            ben: "<a:Ben:946137827006087249>",
             yes: "<a:BenYes:945670382281687080>",
             no: "<a:BenNo:945670479711187034>",
             hoho: "<a:BenHohoho:945670730891264102>",
@@ -20,11 +21,12 @@ module.exports = {
         let mString = message.content.toString().toLowerCase()
         
         //temporary solution to making sure that the incoming message is just "ayo ben"
-        //and its response to that should always be Yes
+        //and its response to that should always be Ben
 
         if (mString.length === 6) {
             //default response to ayo ben
-            message.channel.send(`${BenEmotes.yes} yea`)
+            message.channel.send(`${BenEmotes.ben} Ben.`)
+            //random person on reddit got a point
         }
         else {
 
