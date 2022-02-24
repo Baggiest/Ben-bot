@@ -12,22 +12,21 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 # Ben bot terms of service
 
-- Bulleted
-- List
+## 1. AGREEMENT TO TERMS
+---
+- You agree that by accessing the Site, you have read, understood, and agreed to be bound by all of these Terms of Use. 
+- IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+ 
+## 2. NO ABUSIVE USAGE
+---
+- Do not use this bot in any misbehaving way, do not harass other discord users, doing so your server will be rightfully blacklisted and you have to appeal an application to the bot's owner to be taken off
+- Do not abuse the bot, this bot is made for simple entertainment, any unusual amount of suspicious traffic from one guild will result in an investigation and will be dealt with accordingly
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+---
 
-[Link](url) and ![Image](src)
+# Legal disclaimers
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## MATERIAL USAGE
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MrBaggieBug/Ben-bot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- All copyright, trademarks and all other intellectual property rights in all material of the content material used from "Talking Ben the Dog" belong to ‘Outfit7 Limited’ or its licensors
