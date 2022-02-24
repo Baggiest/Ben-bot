@@ -38,7 +38,15 @@ async function bootstrap() {
 
   client.registerEvent('ready', () => {
     console.log('Ready!');
-    
+
+  });
+  
+  client.registerEvent('guildCreate', () => {
+    console.log('Some mf really added this mf to their server 💀');
+  });
+
+  client.registerEvent('guildDelete', ()=>{
+    console.log("oh nyooooo someone kicked ben, didnt ask");
   });
 
   await client.init(process.env.DISCORD_TOKEN);
