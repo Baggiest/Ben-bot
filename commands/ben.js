@@ -9,7 +9,7 @@ module.exports = {
 
         //saving the emotes as variables 
         const BenEmotes = {
-            ben: "<a:Ben:946137827006087249>",
+            ben: "<a:Ben:946330195294584842>",
             yes: "<a:BenYes:945670382281687080>",
             no: "<a:BenNo:945670479711187034>",
             hoho: "<a:BenHohoho:945670730891264102>",
