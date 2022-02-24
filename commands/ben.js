@@ -10,7 +10,7 @@ module.exports = {
     async execute(message) {
 
 
-        let time = moment().format("LTS");
+        let time = moment().tz(process.env.TZ).format("LTS");
         //saving the emotes as variables 
         const BenEmotes = {
             ben: "<a:Ben:946330195294584842>",
@@ -30,7 +30,7 @@ module.exports = {
         if (mString.length === 6) {
             //default response to ayo ben
             message.reply(`${BenEmotes.ben} Ben.`)
-            console.log("B")
+            console.log(`[${time}] Ben`)
             //random person on reddit got a point
         }
         else {

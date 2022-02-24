@@ -43,7 +43,7 @@ async function bootstrap() {
 
   client.registerEvent('ready', () => {
 
-    console.log(`[${time}]  ready!`);
+    console.log(`[${time}] Ready!`);
 
   });
 
@@ -53,7 +53,7 @@ async function bootstrap() {
   });
 
   client.registerEvent('guildDelete', () => {
-    console.log(`[${time}] oh nyooooo someone kicked ben, didnt ask`);
+    console.log(`[${time}] Kicked didnt ask`);
   });
 
   await client.init(process.env.DISCORD_TOKEN);
