@@ -1,5 +1,8 @@
 /* eslint-disable no-empty */
 /* eslint-disable no-unused-vars */
+const moment = require('moment');
+
+
 module.exports = {
     name: 'ben',
     description: 'answers',
@@ -7,6 +10,7 @@ module.exports = {
     async execute(message) {
 
 
+        let time = moment().format("LTS");
         //saving the emotes as variables 
         const BenEmotes = {
             ben: "<a:Ben:946330195294584842>",
@@ -19,7 +23,7 @@ module.exports = {
         //get the incoming message and make sure everything is an string
 
         let mString = message.content.toString().toLowerCase()
-        
+
         //temporary solution to making sure that the incoming message is just "ayo ben"
         //and its response to that should always be Ben
 
@@ -33,7 +37,7 @@ module.exports = {
 
             //random 1 to 10 number generator
             let r = Math.floor(Math.random() * 10) + 1;
-            console.log(r)
+            console.log(`[${time}] ${r}`)
 
             switch (true) {
 

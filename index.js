@@ -1,12 +1,15 @@
 const Discord = require('discord.js');
-const { join } = require('path');
+const { join, format } = require('path');
 const CCPClient = require('./client/ccp-client');
 const SettingsProvider = require('./client/settings-provider');
 const CommandsModule = require('./client/modules/commands');
 const config = require('./config.json');
+const moment = require('moment');
+const { lstat } = require('fs');
+
 require("dotenv").config();
 
-
+const time = moment().format("LTS")
 //to do, trim off the unnecessary guilds and perms
 
 const clientOptions = {
@@ -36,17 +39,21 @@ commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 async function bootstrap() {
   await client.registerModule('commands', commandsModule);
 
+
+
   client.registerEvent('ready', () => {
-    console.log('Ready!');
+
+    console.log(`[${time}]  ready!`);
 
   });
-  
+
   client.registerEvent('guildCreate', () => {
-    console.log('Some mf really added this mf to their server 💀');
+    console.log(`[${time}] Some mf really added this mf to their server 💀`);
+
   });
 
-  client.registerEvent('guildDelete', ()=>{
-    console.log("oh nyooooo someone kicked ben, didnt ask");
+  client.registerEvent('guildDelete', () => {
+    console.log(`[${time}] oh nyooooo someone kicked ben, didnt ask`);
   });
 
   await client.init(process.env.DISCORD_TOKEN);
