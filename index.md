@@ -12,6 +12,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 # Ben bot terms of service
 
+
+
 ## 1. AGREEMENT TO TERMS
 ---
 - You agree that by accessing the Site, you have read, understood, and agreed to be bound by all of these Terms of Use. 
@@ -26,6 +28,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ---
 
 # Legal disclaimers
+
 
 ## MATERIAL USAGE
 
