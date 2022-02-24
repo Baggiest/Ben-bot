@@ -25,7 +25,7 @@ module.exports = {
 
         if (mString.length === 6) {
             //default response to ayo ben
-            message.channel.send(`${BenEmotes.ben} Ben.`)
+            message.reply(`${BenEmotes.ben} Ben.`)
             //random person on reddit got a point
         }
         else {
@@ -38,27 +38,27 @@ module.exports = {
 
                 case (r == 1 || r == 2 || r == 3):
                     //yes
-                    message.channel.send(`${BenEmotes.yes} yes`)
+                    message.reply(`${BenEmotes.yes} yes`)
                     break;
 
                 case (r == 4 || r == 5):
                     //no
-                    message.channel.send(`${BenEmotes.no} no`)
+                    message.reply(`${BenEmotes.no} no`)
                     break;
 
                 case (r == 6 || r == 7):
                     //hohoho
-                    message.channel.send(`${BenEmotes.hoho} hohoho`)
+                    message.reply(`${BenEmotes.hoho} hohoho`)
                     break;
 
                 case (r == 8 || r == 9):
                     //ugh
-                    message.channel.send(`${BenEmotes.ugh} ughhh`)
+                    message.reply(`${BenEmotes.ugh} ughhh`)
                     break;
 
                 case (r == 10):
                     //hangup
-                    message.channel.send(`${BenEmotes.hangup} ...`)
+                    message.reply(`${BenEmotes.hangup} ...`)
                     break
 
             }
