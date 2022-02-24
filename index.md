@@ -36,4 +36,4 @@
 
 
 ----
-~User consent: messages provided with the set prefix of the bot~
+###### User consent: messages provided with the set prefix of the bot~
