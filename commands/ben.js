@@ -26,6 +26,7 @@ module.exports = {
         if (mString.length === 6) {
             //default response to ayo ben
             message.reply(`${BenEmotes.ben} Ben.`)
+            console.log("B")
             //random person on reddit got a point
         }
         else {
