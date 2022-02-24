@@ -10,7 +10,7 @@ module.exports = {
     async execute(message) {
 
 
-        let time = moment().tz(process.env.TZ).format("LTS");
+        let time = moment().format("LTS");
         //saving the emotes as variables 
         const BenEmotes = {
             ben: "<a:Ben:946330195294584842>",
