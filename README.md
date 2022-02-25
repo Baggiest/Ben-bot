@@ -10,4 +10,4 @@ credit to [dacurse](https://github.com/DaCurse) for the all the help in writing 
 
 ---
 
-## {Invite to your server](https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=414464666624&scope=bot)
+## [Invite to your server](https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=414464666624&scope=bot)
