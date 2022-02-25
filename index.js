@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const { join, format } = require('path');
-const CCPClient = require('./client/ccp-client');
+const Client = require('./client/client');
 const SettingsProvider = require('./client/settings-provider');
 const CommandsModule = require('./client/modules/commands');
 const config = require('./config.json');
@@ -35,7 +35,7 @@ const clientOptions = {
 };
 
 const settings = new SettingsProvider(config);
-const client = new CCPClient(clientOptions, settings);
+const client = new Client(clientOptions, settings);
 
 const commandsModule = new CommandsModule();
 commandsModule.loadFromDirectory(join(__dirname, 'commands'));

@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-module.exports = class CCPClient {
+module.exports = class Client {
   constructor(clientOptions, settingsProvider) {
     this.client = new Discord.Client(clientOptions);
     this.listeners = new Discord.Collection();

@@ -8,9 +8,9 @@ module.exports = class CommandsModule {
     this.cooldowns = new Discord.Collection();
   }
 
-  register(ccpClient) {
-    this.ccpClient = ccpClient;
-    this.ccpClient.registerEvent(
+  register(client) {
+    this.client = client;
+    this.client.registerEvent(
       'messageCreate',
       this.handleMessage.bind(this)
     );
@@ -26,7 +26,7 @@ module.exports = class CommandsModule {
   }
 
   async handleMessage(message) {
-    const prefix = this.ccpClient.settings.get('prefix');
+    const prefix = this.client.settings.get('prefix');
 
     let mContent = message.content.toString().toLowerCase()
     //bro it work???????? lets gooooooooooooo
@@ -38,6 +38,6 @@ module.exports = class CommandsModule {
 
     if (!this.commands.has(commandName)) return;
     const command = this.commands.get(commandName);
-    command.execute(message, args, this.ccpClient);
+    command.execute(message, args, this.client);
   }
 };
