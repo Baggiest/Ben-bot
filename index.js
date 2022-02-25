@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const Discord = require('discord.js');
 const { join, format } = require('path');
 const Client = require('./client/client');
