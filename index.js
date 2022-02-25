@@ -9,8 +9,13 @@ const { lstat } = require('fs');
 
 require("dotenv").config();
 
+// LTS here just means that moment will 
+// format the time in [H:M:S AM/PM] 
 const time = moment().format("LTS")
-//to do, trim off the unnecessary guilds and perms
+
+
+// to do, trim off the unnecessary guilds and perms
+// spoilers i didnt
 
 const clientOptions = {
   intents: [
@@ -42,21 +47,24 @@ async function bootstrap() {
 
 
   client.registerEvent('ready', () => {
-
+    
+    // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
 
   });
 
+  //when mfs add the bot to their server
   client.registerEvent('guildCreate', () => {
     console.log(`[${time}] Some mf really added this mf to their server 💀`);
 
   });
-
+  
+  //when bozos kick ben
   client.registerEvent('guildDelete', () => {
     console.log(`[${time}] Kicked didnt ask`);
   });
 
-  await client.init(process.env.DISCORD_TOKEN);
+  await client.init();
 }
 
 bootstrap();
