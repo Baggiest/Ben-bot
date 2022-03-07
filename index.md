@@ -32,7 +32,7 @@
 
 - [Main Ben (filled)](https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot)
 
-- [Alt Ben (availeble)](https://discord.com/api/oauth2/authorize?client_id=947073230903054366&permissions=412317248576&scope=bot)
+- [Alt Ben (available but almost filled)](https://discord.com/api/oauth2/authorize?client_id=947073230903054366&permissions=412317248576&scope=bot)
 
 ---
 
