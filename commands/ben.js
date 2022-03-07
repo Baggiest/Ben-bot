@@ -24,15 +24,18 @@ module.exports = {
 
         let mString = message.content.toString().toLowerCase()
 
-        //temporary solution to making sure that the incoming message is just "ayo ben"
+        //temporary solution to making sure that
+        //the incoming message is just "yo ben"
         //and its response to that should always be Ben
 
         if (mString.length === 6) {
-            //default response to ayo ben
+            //default response to yo ben
+
             message.reply(`${BenEmotes.ben} Ben.`)
             console.log(`[${time}] Ben`)
             //random person on reddit got a point
         }
+
         else {
 
             //random 1 to 10 number generator
