@@ -1,4 +1,4 @@
-# Ben bot terms of service
+# Ben bot terms of service and Invites
 
 
 
