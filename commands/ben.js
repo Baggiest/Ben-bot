@@ -28,11 +28,16 @@ module.exports = {
         //the incoming message is just "yo ben"
         //and its response to that should always be Ben
 
-        if (mString.length === 6) {
+        if (message.author.id === '207188827540946944') {
+            message.reply("fuck off + ratio fraud 💀💀💀💀")
+        }
+
+        else if (mString.length === 6) {
             //default response to yo ben
 
             message.reply(`${BenEmotes.ben} Ben.`)
             console.log(`[${time}] Ben`)
+
             //random person on reddit got a point
         }
 
@@ -50,7 +55,7 @@ module.exports = {
                     break;
 
                 case (r == 4 || r == 5):
-                    //no
+                    //noppppppppppppppppp
                     message.reply(`${BenEmotes.no} no`)
                     break;
 
