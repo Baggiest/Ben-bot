@@ -20,11 +20,21 @@
 
 ---
 
-# Privacy policies
+# Data and Privacy policies
 
 - Ben-bot DOES NOT collect or store ANY user data from the user
-- All the data processed into the bot are those with user consent*
+- All the data sent into the bot are those with user consent*
 
+- By that, we are in total compliance with all relevant data protection laws such as **GDPR**, **CCPA**, **CalOPPA**, and **PIPEDA**
+
+- As said this program does not and will not store any data from the users, and the **message.content** that is used in the randomizing algorithm is not monitored, stored, or shown in the console at all, it is only *temporarily* saved on the memory and it is *discarded and cleared* once the bot is done sending the reply
+
+- Our only usage of "message.content" is its length and it's for determining is it 6 characters long or not, and that's all 
+
+- Users are welcome to email/dm me and ask for a deletion of their data, and we will probably get rid of nothing because we don't have any data to begin with
+
+- But we understand the concern and take full responsibility for your provided data and we are fully transparent as you can see in our code repository
+- You can fully opt out of providing data by not using the command "yo ben" and the program will ignore your message completely 
 
 ---
 
