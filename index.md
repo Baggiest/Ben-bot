@@ -40,13 +40,7 @@
 
 # Invite Links
 
-- [Main Ben (filled)](https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot)
-
-- [Alt Ben (filled)](https://discord.com/api/oauth2/authorize?client_id=947073230903054366&permissions=412317248576&scope=bot)
-
-- [Alt Ben the second (available... I think)](https://discord.com/api/oauth2/authorize?client_id=950544882727022652&permissions=412317248576&scope=bot)
-
-- [Alt Ben the third (I am in crippling pain)](https://discord.com/api/oauth2/authorize?client_id=954586793364316210&permissions=412317248576&scope=bot)
+- [Verified Ben (available)](https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot)
 
 ---
 
