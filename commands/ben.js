@@ -23,6 +23,8 @@ module.exports = {
         //get the incoming message and make sure everything is an string
 
         let mString = message.content.toString().toLowerCase()
+        let mSplit = mString.split(' ')
+        console.log(mSplit)
 
         //temporary solution to making sure that
         //the incoming message is just "yo ben"
@@ -34,6 +36,11 @@ module.exports = {
             message.reply(`${BenEmotes.ben} Ben.`)
             console.log(`[${time}] Ben`)
             //random person on reddit got a point
+        }
+        else if (mSplit[2] == "make" && mSplit[3] == "some" && mSplit[4] == "lean") {
+
+            message.reply('https://tenor.com/view/my-talking-ben-ben-lean-gif-24912522')
+            
         }
 
         else {
