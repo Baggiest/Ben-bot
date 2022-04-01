@@ -46,21 +46,25 @@ async function bootstrap() {
     
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
-
+    client.client.user.setActivity('Commiting demonic acts of Sin')
+    //console.log(`serving ${client.client.user.guilds.cache.size} mfs`)
   });
 
   //when mfs add the bot to their server
   client.registerEvent('guildCreate', () => {
-    console.log(`[${time}] Some mf really added this mf to their server 💀`);
+    console.log(`[${time}] Some mf really added this mf to their server 💀 [${client.client.user.guilds.cache.size}]`);
 
   });
   
   //when bozos kick ben
   client.registerEvent('guildDelete', () => {
     console.log(`[${time}] Kicked didnt ask`);
+
   });
+
 
   await client.init();
 }
+
 
 bootstrap();

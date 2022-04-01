@@ -11,14 +11,16 @@ module.exports = {
 
 
         let time = moment().format("LTS");
-        //saving the emotes as variables 
+        //saving the emotes and gifs as variables 
         const BenEmotes = {
             ben: "<a:Ben:946330195294584842>",
             yes: "<a:BenYes:945670382281687080>",
             no: "<a:BenNo:945670479711187034>",
             hoho: "<a:BenHohoho:945670730891264102>",
             hangup: "<a:BenHangup:945682532962291802>",
-            ugh: "<a:BenUgh:945670730442473472>"
+            ugh: "<a:BenUgh:945670730442473472>",
+            gifLean: "https://cdn.discordapp.com/attachments/883245986166759437/959332263261261864/ezgif-1-16b7bb9a8f.gif",
+            gifRatio: "https://cdn.discordapp.com/attachments/883245986166759437/959334706611101696/talking-benballs.gif",
         }
         //get the incoming message and make sure everything is an string
 
@@ -39,12 +41,14 @@ module.exports = {
         }
         else if (mSplit[2] == "make" && mSplit[3] == "some" && mSplit[4] == "lean") {
 
-            message.reply('https://cdn.discordapp.com/attachments/883245986166759437/959332263261261864/ezgif-1-16b7bb9a8f.gif')
-
+            message.reply(BenEmotes.gifLean)
+            console.log(`[${time}] Lean`)
         }
 
-        else if(mSplit[2] == "ratio"){
-            message.reply('https://cdn.discordapp.com/attachments/883245986166759437/959334706611101696/talking-benballs.gif')
+        else if (mSplit[2] == "ratio") {
+
+            message.reply(BenEmotes.gifRatio)
+            console.log(`[${time} Ratio]`)
         }
 
         else {
