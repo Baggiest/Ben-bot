@@ -39,8 +39,12 @@ module.exports = {
         }
         else if (mSplit[2] == "make" && mSplit[3] == "some" && mSplit[4] == "lean") {
 
-            message.reply('https://tenor.com/view/my-talking-ben-ben-lean-gif-24912522')
-            
+            message.reply('https://cdn.discordapp.com/attachments/883245986166759437/959332263261261864/ezgif-1-16b7bb9a8f.gif')
+
+        }
+
+        else if(mSplit[2] == "ratio"){
+            message.reply('https://images-ext-1.discordapp.net/external/hi8ilNzrxnjeIYbLGqx36RnwihV40RM8WpxNkxI1bxE/%3Fc%3DVjFfZGlzY29yZA/https/media.tenor.com/AKkrwSZSpZ0AAAPo/talking-ben.mp4')
         }
 
         else {
