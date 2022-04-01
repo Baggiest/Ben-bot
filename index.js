@@ -44,6 +44,19 @@ async function bootstrap() {
   client.registerEvent('ready', () => {
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
+    
+  try {
+      client.client.user.setPresence({
+        status: 'idle',
+        game: {
+          name: "yo help",  // The message shown
+          type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
+  }
+ })
+    }catch(e){
+      console.log(e)
+    }
+    
 
   });
 
