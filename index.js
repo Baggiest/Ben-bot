@@ -49,7 +49,7 @@ async function bootstrap() {
       client.client.user.setPresence({
         status: 'idle',
         game: {
-          name: "yo help",  // The message shown
+          name: "this bot will be soon deleted, invite the main verified ben",  // The message shown
           type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
   }
  })
