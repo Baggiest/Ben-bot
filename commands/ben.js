@@ -44,7 +44,7 @@ module.exports = {
         }
 
         else if(mSplit[2] == "ratio"){
-            message.reply('https://images-ext-1.discordapp.net/external/hi8ilNzrxnjeIYbLGqx36RnwihV40RM8WpxNkxI1bxE/%3Fc%3DVjFfZGlzY29yZA/https/media.tenor.com/AKkrwSZSpZ0AAAPo/talking-ben.mp4')
+            message.reply('https://cdn.discordapp.com/attachments/883245986166759437/959334706611101696/talking-benballs.gif')
         }
 
         else {
