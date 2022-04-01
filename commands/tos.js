@@ -6,12 +6,10 @@ module.exports = {
     cooldown: 5,
     async execute(message) {
 
-        //just a timestap for logging lol
-        let time = moment().format("LTS");
+        let time = moment().format("LTS")
 
-        //no ones reading this
-        message.channel.send(`checkout our TOS and privacy policy at \n https://mrbaggiebug.github.io/Ben-bot/`)
-        console.log(`[${time}] TOS`)
+        message.channel.send('GREAT NEWS! Main ben has been verified so you can now kick this bot and add that one from \n \n https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot')
+        console.log(`[${time}] SEGGZ`)
     },
   };
   

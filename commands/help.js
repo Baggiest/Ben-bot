@@ -7,8 +7,8 @@ module.exports = {
     async execute(message) {
         let time = moment().format("LTS")
 
-        message.channel.send(`for talking use "yo ben [question]" \n \n **do not** turn off "use external emotes" in bot permissions \n it will break the bot and you'll need to reinvite \n \n ben should have a 100% response rate, if it ignored your messages, kick and reinvite with the latest invite link with all the appropriate roles :) \n \n and if you want to contribute say "yo code" to learn more \n or "yo invite" to learn about why ben can join servers for now`)
-        console.log(`[${time}] H`)
+        message.channel.send('GREAT NEWS! Main ben has been verified so you can now kick this bot and add that one from \n \n https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot')
+        console.log(`[${time}] SEGGZ`)
     },
   };
   

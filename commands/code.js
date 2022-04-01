@@ -9,8 +9,8 @@ module.exports = {
     async execute(message) {
         let time = moment().format("LTS")
 
-        message.reply(`you can start coding your ideas and my lazyass will most likely accept it \n feel free to star and contribute in \n https://github.com/mrbaggiebug/Ben-bot`)
-        console.log(`[${time}] Github`)
+        message.channel.send('GREAT NEWS! Main ben has been verified so you can now kick this bot and add that one from \n \n https://discord.com/api/oauth2/authorize?client_id=945330615685873704&permissions=412317248576&scope=bot')
+        console.log(`[${time}] SEGGZ`)
     },
   };
   

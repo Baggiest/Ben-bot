@@ -1,8 +1,9 @@
+const { Message } = require('discord.js');
 const moment = require('moment');
 
 module.exports = {
-    name: 'invite',
-    description: 'inforemations about it',
+    name: 'help',
+    description: 'send help',
     cooldown: 5,
     async execute(message) {
         let time = moment().format("LTS")
@@ -11,4 +12,3 @@ module.exports = {
         console.log(`[${time}] SEGGZ`)
     },
   };
-  

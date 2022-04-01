@@ -22,11 +22,7 @@ const clientOptions = {
   intents: [
     Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
-    Discord.Intents.FLAGS.GUILD_BANS,
     Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
-    Discord.Intents.FLAGS.GUILD_INTEGRATIONS,
-    Discord.Intents.FLAGS.GUILD_WEBHOOKS,
-    Discord.Intents.FLAGS.GUILD_PRESENCES,
     Discord.Intents.FLAGS.GUILD_MEMBERS,
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
@@ -45,10 +41,7 @@ commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 async function bootstrap() {
   await client.registerModule('commands', commandsModule);
 
-
-
   client.registerEvent('ready', () => {
-    
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
 
@@ -59,12 +52,16 @@ async function bootstrap() {
     console.log(`[${time}] Some mf really added this mf to their server 💀`);
 
   });
-  
+
   //when bozos kick ben
   client.registerEvent('guildDelete', () => {
     console.log(`[${time}] Kicked didnt ask`);
   });
 
+
+  client.registerEvent('interactionCreate', async interaction => {
+    //
+  })
   await client.init();
 }
 
