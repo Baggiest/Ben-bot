@@ -24,7 +24,7 @@ module.exports = {
 
         let mString = message.content.toString().toLowerCase()
         let mSplit = mString.split(' ')
-        console.log(mSplit)
+
 
         //temporary solution to making sure that
         //the incoming message is just "yo ben"
