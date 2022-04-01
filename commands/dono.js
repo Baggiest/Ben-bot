@@ -7,9 +7,10 @@ module.exports = {
 
         const donoEmbed = new MessageEmbed()
         .setTitle('Donations!')
-        .setDescription('As you might know Ben is a free and opensource software, and I get 0 bitches \n so it would be very nice of you do buy me some Head at \n \n https://www.buymeacoffee.com/MrBaggieBug')
+        .setDescription('As you might know Ben is a free and opensource software, and I get 0 bitches \n so it would be very nice of you do buy me some Head at \n \n https://www.buymeacoffee.com/MrBaggieBug \n \n List of donations: \n \n 1. Nobody yet 🗿🗿🗿')
+        .setFooter('LOVE U MFS <3')
         .setURL('https://www.buymeacoffee.com/MrBaggieBug')
-        .setImage('https://tenor.com/bQRdb.gif')
+        .setImage('https://cdn.discordapp.com/attachments/883245986166759437/959316443399352350/no-bitches-gclik-gif.gif')
 
         message.reply({embeds:[donoEmbed]})
     }
