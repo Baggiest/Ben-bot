@@ -55,7 +55,7 @@ async function bootstrap() {
 
   //when bozos kick ben
   client.registerEvent('guildDelete', () => {
-    console.log(`[${time}] Kicked didnt ask`);
+    console.log(`[${time}] Kicked The Fraud alt W`);
   });
 
 
