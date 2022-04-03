@@ -37,25 +37,43 @@ const commandsModule = new CommandsModule();
 commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 
 
+let getMemberCount = () =>{
+  return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
+}
+
 async function bootstrap() {
   await client.registerModule('commands', commandsModule);
 
 
 
   client.registerEvent('ready', () => {
-    
+
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
-    client.client.user.setActivity('Commiting demonic acts of Sin')
-    console.log(`serving ${client.client.guilds.cache.size} mfs`)
+
+
+    try {
+      client.client.user.setPresence({
+        status: 'idle',
+        game: {
+          name: "Committing Demonic acts of Sin",  // The message shown
+          type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
+        }
+      })
+
+    } catch (e) {
+      console.log(e)
+    }
+    console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
+
   });
 
   //when mfs add the bot to their server
   client.registerEvent('guildCreate', () => {
-    console.log(`[${time}] Some mf really added this mf to their server 💀 [${client.client.guilds.cache.size}]`);
+    console.log(`[${time}] Some mf really added this mf to their server 💀 [${client.client.guilds.cache.size}] [${getMemberCount()}]`);
 
   });
-  
+
   //when bozos kick ben
   client.registerEvent('guildDelete', () => {
     console.log(`[${time}] Kicked didnt ask [${client.client.guilds.cache.size}]`);
