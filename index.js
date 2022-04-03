@@ -37,7 +37,7 @@ const commandsModule = new CommandsModule();
 commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 
 
-let getMemberCount = () =>{
+let getMemberCount = () => {
   return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
 }
 
