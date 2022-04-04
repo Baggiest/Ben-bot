@@ -39,7 +39,7 @@ const labReactions = {
 }
 
 const labEmbed = new MessageEmbed()
-    .setTitle('mix your potions')
+    .setTitle('go on and mix your potions!')
     .setImage('https://cdn.discordapp.com/attachments/883245986166759437/960154015616868432/unknown.png')
     .setColor('PURPLE')
 
@@ -47,6 +47,10 @@ const gifEmbed = new MessageEmbed()
     .setImage(labEmotes.gifLeMeme)
     .setTitle('cant mix the same 2 potions')
     .setColor("LUMINOUS_VIVID_PINK")
+
+const doneEmbed = new MessageEmbed()
+    .setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSLox2ia0u9peaoS7Sy19T60CQ4tO8JT46Q&usqp=CAU')
+    .setColor("GREEN")
 
 module.exports = {
 
@@ -287,7 +291,7 @@ module.exports = {
                     }
 
             }
-            await msg.edit({ components: []});
+            await msg.edit({ embeds: [doneEmbed], components: [] });
 
         })
     }
