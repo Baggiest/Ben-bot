@@ -50,7 +50,8 @@ async function bootstrap() {
 
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
-    client.client.user.setActivity('Commiting demonic acts of Sin')
+    client.client.user.setActivity(`Commiting demonic acts of Sin for ${getMemberCount()} people`)
+
     console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
 
   });
