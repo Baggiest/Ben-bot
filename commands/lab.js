@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 const Client = require('../client/client')
 const { MessageEmbed, ButtonInteraction, MessageActionRow, MessageButton } = require('discord.js')
+const moment = require('moment')
+
+let time = moment().format("LTS")
 
 
 const labEmotes = {
@@ -82,10 +85,11 @@ module.exports = {
                     .setDisabled(false)
             )
 
-        message.reply({
+        const msg = await message.reply({
             embeds: [labEmbed],
             components: [row]
         })
+
 
         const filter = (interaction) => {
             if (interaction.user.id === message.author.id) {
@@ -138,7 +142,7 @@ module.exports = {
             }
         });
 
-        collector.on('end', (butIntr) => {
+        collector.on('end', async (butIntr) => {
 
             const buttons = [...butIntr.values()];
             const [firstIntr, secondIntr] = buttons;
@@ -146,7 +150,7 @@ module.exports = {
             let first = firstIntr.customId;
             let second = secondIntr.customId;
 
-            console.log(`${first} and ${second}`)
+            console.log(`[${time}] ${first} and ${second}`)
 
             switch (first) {
 
@@ -283,6 +287,8 @@ module.exports = {
                     }
 
             }
+            await msg.edit({ components: []});
+
         })
     }
 }
