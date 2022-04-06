@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/MrBaggieBug/CCPbot#readme",
   "dependencies": {
+    "@top-gg/sdk": "^3.1.3",
     "discord.js": "^13.3.0",
     "dotenv": "^16.0.0",
     "moment": "^2.29.1",
     "mongodb": "^4.1.3",
-    "pm2": "^5.2.0"
+    "pm2": "^5.2.0",
+    "topgg-autoposter": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^8.1.0",

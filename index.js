@@ -6,14 +6,15 @@ const SettingsProvider = require('./client/settings-provider');
 const CommandsModule = require('./client/modules/commands');
 const config = require('./config.json');
 const moment = require('moment');
-const { lstat } = require('fs');
+const { AutoPoster } = require('topgg-autoposter')
+
 
 require("dotenv").config();
+
 
 // LTS here just means that moment will 
 // format the time in [H:M:S AM/PM] 
 const time = moment().format("LTS")
-
 
 // to do, trim off the unnecessary guilds and perms
 // spoilers i didnt
@@ -37,6 +38,15 @@ const commandsModule = new CommandsModule();
 commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 
 
+// sends server count to top.gg
+const poster = AutoPoster(config.topggToken, client.client)
+
+poster.on('posted', (stats) => { // ran when succesfully posted
+  console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
+})
+
+
+// ... gets member count
 let getMemberCount = () => {
   return client.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b);
 }
