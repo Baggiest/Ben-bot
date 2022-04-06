@@ -6,7 +6,7 @@
 
 [![wakatime](https://wakatime.com/badge/github/MrBaggieBug/Ben-bot.svg)](https://wakatime.com/badge/github/MrBaggieBug/Ben-bot)
 
-[![Discord Bots](https://top.gg/api/widget/945330615685873704.svg)(https://top.gg/bot/945330615685873704)
+[![Discord Bots](https://top.gg/api/widget/945330615685873704.svg)
 
 credit to [dacurse](https://github.com/DaCurse) for the all the help in writing this
 
