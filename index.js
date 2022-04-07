@@ -7,6 +7,8 @@ const CommandsModule = require('./client/modules/commands');
 const config = require('./config.json');
 const moment = require('moment');
 const { lstat } = require('fs');
+const { AutoPoster } = require('topgg-autoposter')
+
 
 require("dotenv").config();
 
@@ -37,6 +39,12 @@ const client = new Client(clientOptions, settings);
 const commandsModule = new CommandsModule();
 commandsModule.loadFromDirectory(join(__dirname, 'commands'));
 
+
+const poster = AutoPoster(config.topggToken, client.client)
+
+poster.on('posted', (stats) => { // ran when succesfully posted
+  console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
+})
 
 async function bootstrap() {
   await client.registerModule('commands', commandsModule);
