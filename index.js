@@ -62,9 +62,6 @@ async function bootstrap() {
     console.log(`[${time}] Ready!`);
     client.client.user.setActivity(`Use "yo lab" and mix potions!!!! \n Commiting demonic acts of Sin for ${getMemberCount()} people`)
 
-    client.client.channels.cache.get('863995275986337812').send('<@279778240300843011>');
-    client.client.channels.cache.get('863995275986337812').send('https://cdn.discordapp.com/attachments/883245986166759437/963908105127747674/unknown.png');
-
     console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
 
   });
