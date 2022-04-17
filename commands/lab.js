@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-const Client = require('../client/client')
 const { MessageEmbed, ButtonInteraction, MessageActionRow, MessageButton } = require('discord.js')
 const moment = require('moment')
 
@@ -65,22 +64,26 @@ module.exports = {
                 new MessageButton()
                     .setCustomId('yellow')
                     .setStyle('SECONDARY')
-                    .setEmoji(labEmotes.Yellow),
+                    .setEmoji(labEmotes.Yellow)
+                    .setDisabled(false),
 
                 new MessageButton()
                     .setCustomId('green')
                     .setStyle('SECONDARY')
-                    .setEmoji(labEmotes.Green),
+                    .setEmoji(labEmotes.Green)
+                    .setDisabled(false),
 
                 new MessageButton()
                     .setCustomId('cyan')
                     .setStyle('SECONDARY')
-                    .setEmoji(labEmotes.LightBlue),
+                    .setEmoji(labEmotes.LightBlue)
+                    .setDisabled(false),
 
                 new MessageButton()
                     .setCustomId('pink')
                     .setStyle('SECONDARY')
-                    .setEmoji(labEmotes.Pink),
+                    .setEmoji(labEmotes.Pink)
+                    .setDisabled(false),
 
                 new MessageButton()
                     .setCustomId('blue')
@@ -144,6 +147,13 @@ module.exports = {
                     butIntr.reply("Idek how you got here");
                 }
             }
+
+            msg.edit({
+                embeds: [labEmbed],
+                components: [row]
+            }
+
+            )
         });
 
         collector.on('end', async (butIntr) => {
