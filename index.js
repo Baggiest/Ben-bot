@@ -60,6 +60,7 @@ async function bootstrap() {
 
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
+    client.client.channels.cache.get('863995275986337812').send('kill yourself cunt <@279778240300843011>')
     client.client.user.setActivity(`Use "yo lab" and mix potions!!!! \n Commiting demonic acts of Sin for ${getMemberCount()} people`)
 
     console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
