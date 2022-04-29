@@ -1,6 +1,7 @@
 /* eslint-disable no-empty */
 /* eslint-disable no-unused-vars */
 const moment = require('moment');
+const config = require('../config.json');
 
 
 module.exports = {
@@ -25,61 +26,71 @@ module.exports = {
         //get the incoming message and make sure everything is an string
 
         let mString = message.content.toString().toLowerCase()
-        let mSplit = mString.split(' ')
+        let mSplit = mString.split(config.prefix)
 
 
         //temporary solution to making sure that
         //the incoming message is just "yo ben"
         //and its response to that should always be Ben
+        // modifications to work for any prefix
 
-        if (mString.length === 6) {
-            //default response to yo ben
+        if (mSplit === 'ben') {
+            //default response to (prefix) ben
 
             message.reply(`${BenEmotes.ben} Ben.`)
             console.log(`[${time}] Ben`)
             //random person on reddit got a point
+            // lmao wtf
         }
-        else if (mSplit[2] == "make" && mSplit[3] == "some" && mSplit[4] == "lean") {
-
+        else if (mString === 'make some lean') {
+            
             message.reply(BenEmotes.gifLean)
             console.log(`[${time}] Lean`)
         }
 
-        else if (mSplit[2] == "ratio") {
+        else if (mString == "ratio") {
 
             message.reply(BenEmotes.gifRatio)
             console.log(`[${time} Ratio]`)
         }
 
         else {
-
+            // function to easily add for more use later :)
+            function random(min, max) {
+                const num = Math.floor(Math.random() * (max - min + 1)) + min;
+                return num;
+            }
             //random 1 to 10 number generator
-            let r = Math.floor(Math.random() * 10) + 1;
+            let r = random(1, 10)
             console.log(`[${time}] ${r}`)
 
+            // essentially, i think this now works as a procedural system, if not, im simply stupid.
+            // it should break (similar to return) and stop it from going.
+            // if it doesnt, please let me know in the pr that this is being submitted in.
+            
             switch (true) {
 
-                case (r == 1 || r == 2 || r == 3):
+                case (r <= 3):
                     //yes
                     message.reply(`${BenEmotes.yes} yes`)
                     break;
 
-                case (r == 4 || r == 5):
+                case (r <= 5):
                     //no
                     message.reply(`${BenEmotes.no} no`)
                     break;
 
-                case (r == 6 || r == 7):
+                case (r <= 7):
                     //hohoho
                     message.reply(`${BenEmotes.hoho} hohoho`)
                     break;
 
-                case (r == 8 || r == 9):
+                case (r <= 9):
                     //ugh
                     message.reply(`${BenEmotes.ugh} ughhh`)
                     break;
 
-                case (r == 10):
+                case (r <= 10):
                     //hangup
                     message.reply(`${BenEmotes.hangup} ...`)
                     break
