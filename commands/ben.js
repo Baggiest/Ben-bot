@@ -34,7 +34,7 @@ module.exports = {
         //and its response to that should always be Ben
         // modifications to work for any prefix
 
-        if (mSplit === 'ben') {
+        if (mSplit == 'ben') {
             //default response to (prefix) ben
 
             message.reply(`${BenEmotes.ben} Ben.`)
@@ -42,13 +42,13 @@ module.exports = {
             //random person on reddit got a point
             // lmao wtf
         }
-        else if (mString === 'make some lean') {
+        else if (mSplit == 'ben make some lean') {
             
             message.reply(BenEmotes.gifLean)
             console.log(`[${time}] Lean`)
         }
 
-        else if (mString == "ratio") {
+        else if (mSplit == "ben ratio") {
 
             message.reply(BenEmotes.gifRatio)
             console.log(`[${time} Ratio]`)
