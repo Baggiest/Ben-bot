@@ -1,5 +1,5 @@
 # Top.gg stats
-[![Discord Bots](https://top.gg/api/widget/945330615685873704.svg)]
+![Discord Bots](https://top.gg/api/widget/945330615685873704.svg)
 # Ben bot terms of service and Invites
 
 
