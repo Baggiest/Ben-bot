@@ -60,7 +60,7 @@ async function bootstrap() {
 
     // do i really have to explain when this shit runs
     console.log(`[${time}] Ready!`);
-    client.client.user.setActivity(`Use "yo lab" and mix potions!!!! \n Committing demonic acts of Sin for mfs`)
+    client.client.user.setActivity(`Should I add AI to Ben and make it sentient?`)
 
     //console.log(`serving ${client.client.guilds.cache.size} mfs [${getMemberCount()}]`)
 
