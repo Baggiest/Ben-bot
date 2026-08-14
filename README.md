@@ -1,3 +1,5 @@
+
+
 # Ben the discord bot
 
 ## really enjoyed coding this hope u enjoy it
@@ -8,7 +10,7 @@
 
 ![Discord Bots](https://top.gg/api/widget/945330615685873704.svg)
 
-credit to [dacurse](https://github.com/DaCurse) for the all the help in writing this
+credit to [dacurse](https://github.com/DaCurse) for all the help in writing this
 
 ---
 
